@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Constructora 360 - Conoce nuestra historia, misión, visión y valores. Expertos en soluciones integrales de construcción con enfoque 360°.">
+    <meta name="keywords" content="constructora, nosotros, historia, misión, visión, valores, equipo, construcción, calidad, sostenibilidad">
+    <meta name="author" content="Constructora 360">
+    <title>Constructora 360 - Nosotros</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <style>
+        /* Variables CSS */
+        :root {
+            --color-primario: #0056b3;
+            --color-secundario: #6c757d;
+            --color-acento: #ff8c00;
+            --color-fondo: #f8f9fa;
+            --color-texto: #333;
+            --fuente-titulos: 'Montserrat', sans-serif;
+            --fuente-texto: 'Raleway', sans-serif;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: var(--fuente-texto);
+            color: var(--color-texto);
+            line-height: 1.6;
+            padding-top: 76px; /* Para compensar la navbar fija */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--fuente-titulos);
+            font-weight: 600;
+        }
+
+        /* Header y Navegación */
+        .nav-custom {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--color-primario) !important;
+        }
+
+        .nav-list .nav-link {
+            color: var(--color-primario) !important;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--color-acento) !important;
+        }
+
+        .nav-list .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--color-acento);
+            transition: width 0.3s ease;
+        }
+
+        .nav-list .nav-link:hover::after,
+        .nav-list .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-links a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-acento);
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--color-acento);
+        }
+
+        /* Estilos específicos para la página Nosotros */
+        .hero-nosotros {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-top: -76px; /* Para compensar la navbar fija */
+            padding-top: 76px;
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb-item a {
+            color: var(--color-acento);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+
+        .seccion-nosotros {
+            padding: 80px 0;
+        }
+
+        .nosotros-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .nosotros-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--color-primario);
+        }
+
+        .nosotros-imagen {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nosotros-info {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--color-primario);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .mision-vision {
+            background-color: var(--color-fondo);
+            padding: 80px 0;
+        }
+
+        .card-mv {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            text-align: center;
+        }
+
+        .card-mv i {
+            font-size: 2.5rem;
+            color: var(--color-primario);
+            margin-bottom: 20px;
+        }
+
+        .equipo {
+            padding: 80px 0;
+        }
+
+        .miembro-equipo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .miembro-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid var(--color-fondo);
+        }
+
+        .valores {
+            background-color: var(--color-fondo);
+            padding: 80px 0;
+        }
+
+        .valor-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .valor-icono {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primario);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .cta-nosotros {
+            background-color: var(--color-primario);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: var(--color-acento);
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 12px 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #e67e00;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-nosotros {
+                height: 40vh;
+            }
+            
+            .seccion-nosotros {
+                padding: 50px 0;
+            }
+            
+            .valor-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .valor-icono {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span>Constructora 360</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-list ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section para Nosotros -->
+    <section class="hero-nosotros">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                </ol>
+            </nav>
+            <h1 class="hero-title">Nuestra Historia</h1>
+            <p class="lead">Conoce más sobre nuestra empresa, valores y el equipo detrás de cada proyecto</p>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="seccion-nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <div class="nosotros-info">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="nosotros-imagen" alt="Equipo de Constructora 360 - Expertos en construcción">
+                        <h2>Constructora 360 - Soluciones Integrales</h2>
+                        <p>Somos una empresa dedicada a ofrecer soluciones integrales en el sector de la construcción, abarcando proyectos de carácter residencial, comercial, industrial e infraestructura. Nuestro modelo de trabajo "360°" nos permite atender todas las fases del proceso constructivo: diseño, planeación, ejecución, supervisión y entrega final, garantizando resultados de alta calidad y excelencia operativa.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row text-center">
+                        <div class="col-12 mb-5">
+                            <h2>Nuestro Enfoque</h2>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="icon-box">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="mt-3">Equipo Multidisciplinario</h4>
+                            <p>Profesionales y técnicos especializados</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="icon-box">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h4 class="mt-3">Alta Calidad</h4>
+                            <p>Cumplimiento de estándares internacionales</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="icon-box">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4 class="mt-3">Sostenibilidad</h4>
+                            <p>Innovación y optimización de recursos</p>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>Contamos con un equipo multidisciplinario de profesionales, técnicos especializados y proveedores estratégicos que respaldan cada uno de nuestros proyectos. Gracias a ello, aseguramos el cumplimiento de los más altos estándares de calidad, seguridad y normatividad vigente.</p>
+                            <p>Nuestra filosofía empresarial se basa en la innovación, la sostenibilidad y la optimización de recursos, con el propósito de generar soluciones que aporten valor tanto a nuestros clientes como a la comunidad en general.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mision-vision">
+        <div class="container">
+            <div class="nosotros-header">
+                <h2>Misión y Visión</h2>
+                <p>Los pilares que guían nuestro trabajo diario</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card-mv">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Misión</h3>
+                        <p>Ofrecer soluciones integrales de construcción con el más alto nivel de calidad, innovación y sostenibilidad, superando las expectativas de nuestros clientes y contribuyendo al desarrollo de comunidades mediante infraestructuras que mejoren la calidad de vida.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card-mv">
+                        <i class="fas fa-eye"></i>
+                        <h3>Visión</h3>
+                        <p>Ser la constructora líder en México y Latinoamérica, reconocida por nuestra excelencia operativa, innovación en procesos constructivos y compromiso con el desarrollo sostenible, manteniendo siempre nuestro enfoque 360° en cada proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="valores">
+        <div class="container">
+            <div class="nosotros-header">
+                <h2>Nuestros Valores</h2>
+                <p>Los principios que rigen cada decisión y acción en nuestra empresa</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h4>Innovación</h4>
+                            <p>Buscamos constantemente nuevas técnicas, materiales y procesos que nos permitan mejorar la eficiencia y calidad de nuestros proyectos.</p>
+                        </div>
+                    </div>
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Calidad</h4>
+                            <p>Nos comprometemos con los más altos estándares en cada fase de nuestros proyectos, utilizando materiales de primera y mano de obra especializada.</p>
+                        </div>
+                    </div>
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div>
+                            <h4>Compromiso</h4>
+                            <p>Cumplimos con lo prometido, respetando plazos, presupuestos y especificaciones, generando confianza a largo plazo con nuestros clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h4>Sostenibilidad</h4>
+                            <p>Incorporamos prácticas amigables con el medio ambiente y buscamos reducir el impacto ecológico de todas nuestras operaciones.</p>
+                        </div>
+                    </div>
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div>
+                            <h4>Trabajo en Equipo</h4>
+                            <p>Fomentamos la colaboración entre todas las áreas de la empresa y con nuestros clientes para lograr los mejores resultados.</p>
+                        </div>
+                    </div>
+                    <div class="valor-item">
+                        <div class="valor-icono">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h4>Excelencia Operativa</h4>
+                            <p>Optimizamos continuamente nuestros procesos para maximizar la eficiencia y el valor entregado en cada proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="equipo">
+        <div class="container">
+            <div class="nosotros-header">
+                <h2>Nuestro Equipo</h2>
+                <p>Profesionales comprometidos con la excelencia en construcción</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="miembro-equipo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="miembro-img" alt="Director General - Constructora 360">
+                        <h4>Ing. Roberto Martínez</h4>
+                        <p class="text-primary">Director General</p>
+                        <p>Con más de 20 años de experiencia en la industria de la construcción, lidera nuestro equipo hacia la excelencia operativa.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="miembro-equipo">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="miembro-img" alt="Directora de Proyectos - Constructora 360">
+                        <h4>Arq. Laura González</h4>
+                        <p class="text-primary">Directora de Proyectos</p>
+                        <p>Especialista en diseño y gestión de proyectos, garantiza que cada obra cumpla con los más altos estándares de calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="miembro-equipo">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="miembro-img" alt="Gerente de Operaciones - Constructora 360">
+                        <h4>Ing. Carlos Rodríguez</h4>
+                        <p class="text-primary">Gerente de Operaciones</p>
+                        <p>Expertos en logística y ejecución de obras, supervisa que cada proyecto se complete en tiempo y forma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-nosotros">
+        <div class="container">
+            <h2>¿Interesado en trabajar con nosotros?</h2>
+            <p class="lead mb-4">Contáctenos para conocer cómo podemos hacer realidad su próximo proyecto constructivo</p>
+            <a href="index.html#contacto" class="btn btn-custom me-3">Solicitar Cotización</a>
+            <a href="servicios.html" class="btn btn-outline-light">Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Constructora 360</h3>
+                    <p>Soluciones integrales en construcción con enfoque 360° para proyectos residenciales, comerciales, industriales y de infraestructura.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4>Enlaces Rápidos</h4>
+                    <div class="footer-links d-flex flex-column">
+                        <a href="index.html#nosotros">Nosotros</a>
+                        <a href="servicios.html">Servicios</a>
+                        <a href="index.html#proyectos">Proyectos</a>
+                        <a href="index.html#contacto">Contacto</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Constructora 360. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        <a href="/aviso-de-privacidad">Aviso de Privacidad</a>
+                        <a href="/terminos-y-condiciones">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script personalizado -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling para enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }); 
+    </script>
+</body>
+</html>

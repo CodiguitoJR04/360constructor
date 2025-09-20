@@ -1,0 +1,157 @@
+@import url(styles.css);
+
+h1, h2, h3, h4, h5, h6 {
+            font-family: var(--fuente-titulos);
+            font-weight: 600;
+        }
+
+        /* Importar estilos del header */
+        @import url('header.css');
+        
+        /* Importar estilos del footer */
+        @import url('footer.css');
+        
+        /* Estilos específicos para la página de servicios */
+        .hero-servicios {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-top: 76px; /* Para compensar la navbar fija */
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb-item a {
+            color: var(--color-acento);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+
+        .servicio-detalle {
+            padding: 80px 0;
+        }
+
+        .servicio-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .servicio-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--color-primario);
+        }
+
+        .servicio-imagen-principal {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicio-info {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .servicio-caracteristicas {
+            margin: 30px 0;
+        }
+
+        .caracteristica-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .caracteristica-icono {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-primario);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .proceso-paso {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .proceso-paso:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .paso-numero {
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-acento);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0 auto 20px;
+        }
+
+        .cta-servicios {
+            background-color: var(--color-primario);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: var(--color-acento);
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 12px 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #e67e00;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-servicios {
+                height: 40vh;
+                padding-top: 66px;
+            }
+            
+            .servicio-detalle {
+                padding: 50px 0;
+            }
+        }
