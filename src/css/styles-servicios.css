@@ -4,13 +4,6 @@ h1, h2, h3, h4, h5, h6 {
             font-family: var(--fuente-titulos);
             font-weight: 600;
         }
-
-        /* Importar estilos del header */
-        @import url('header.css');
-        
-        /* Importar estilos del footer */
-        @import url('footer.css');
-        
         /* Estilos específicos para la página de servicios */
         .hero-servicios {
             height: 50vh;

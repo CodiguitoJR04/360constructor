@@ -44,11 +44,11 @@
     </script>
 </head>
 <body itemscope itemtype="https://schema.org/ConstructionBusiness">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top nav-custom">
+   <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav-custom">
             <div class="container">
-                <a class="navbar-brand" href="/" itemprop="url">
-                    <span itemprop="name">Constructora 360</span>
+                <a class="navbar-brand" href="index.html">
+                    <span>Constructora 360</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav nav-list ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                            <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -74,12 +74,12 @@
                 </div>
             </div>
         </nav>
-
-        <div class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Soluciones Integrales en Construcción</h1>
-                    <p class="lead">Expertos en proyectos residenciales, comerciales, industriales y de infraestructura con enfoque 360°</p>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Soluciones Integrales en Construcción</h1>
+                        <p class="lead">Expertos en proyectos residenciales, comerciales, industriales y de infraestructura con enfoque 360°</p>
                     <div class="mt-4">
                         <a href="#contacto" class="btn btn-custom me-3">Solicitar Cotización</a>
                         <a href="#servicios" class="btn btn-outline-light">Nuestros Servicios</a>
@@ -87,8 +87,7 @@
                 </div>
             </div>
         </div>
-    </header>
-
+    </section>
     <main>
         <!-- Sección Nosotros -->
         <section id="nosotros" class="section-nosotros">
@@ -231,90 +230,6 @@
             </div>
         </section>
 
-        <!-- Sección Contacto -->
-        <section id="contacto" class="section-contact">
-            <div class="container">
-                <div class="contact-header">
-                    <h2>Contacto</h2>
-                    <p>Estamos listos para hacer realidad su próximo proyecto constructivo</p>
-                </div>
-                
-                <div class="row">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <div class="contact-info">
-                            <h3>Información de Contacto</h3>
-                            <div class="contact-item" itemprop="telephone">
-                                <i class="fas fa-phone"></i>
-                                <span>+52 55 1234 5678</span>
-                            </div>
-                            <div class="contact-item" itemprop="email">
-                                <i class="fas fa-envelope"></i>
-                                <span>contacto@constructora360.com</span>
-                            </div>
-                            <div class="contact-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span itemprop="streetAddress">Av. Insurgentes 123</span>,
-                                <span itemprop="addressLocality">Ciudad de México</span>,
-                                <span itemprop="addressRegion">CDMX</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-clock"></i>
-                                <span>Lunes a Viernes: 8:00 - 18:00</span>
-                            </div>
-                            
-                            <div class="mt-5">
-                                <h4>Nuestros Valores</h4>
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check text-success me-2"></i> Innovación en soluciones constructivas</li>
-                                    <li><i class="fas fa-check text-success me-2"></i> Sostenibilidad ambiental</li>
-                                    <li><i class="fas fa-check text-success me-2"></i> Optimización de recursos</li>
-                                    <li><i class="fas fa-check text-success me-2"></i> Calidad y excelencia operativa</li>
-                                    <li><i class="fas fa-check text-success me-2"></i> Compromiso con el cliente</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-7">
-                        <div class="contact-form">
-                            <h3>Envíanos un mensaje</h3>
-                            <form action="#" method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Nombre completo" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Correo electrónico" required>
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control" placeholder="Teléfono">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Asunto">
-                                    </div>
-                                </div>
-                                
-                                <select class="form-control" required>
-                                    <option value="" disabled selected>Tipo de proyecto</option>
-                                    <option>Residencial</option>
-                                    <option>Comercial</option>
-                                    <option>Industrial</option>
-                                    <option>Infraestructura</option>
-                                    <option>Otro</option>
-                                </select>
-                                
-                                <textarea class="form-control" rows="5" placeholder="Describe tu proyecto o consulta" required></textarea>
-                                
-                                <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>

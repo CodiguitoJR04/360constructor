@@ -1,1 +1,177 @@
 @import url(styles.css);
+.hero-nosotros {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-top: -76px; /* Para compensar la navbar fija */
+            padding-top: 76px;
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb-item a {
+            color: var(--color-acento);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+
+        .seccion-nosotros {
+            padding: 80px 0;
+        }
+
+        .nosotros-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .nosotros-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--color-primario);
+        }
+
+        .nosotros-imagen {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nosotros-info {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--color-primario);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .mision-vision {
+            background-color: var(--color-fondo);
+            padding: 80px 0;
+        }
+
+        .card-mv {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            text-align: center;
+        }
+
+        .card-mv i {
+            font-size: 2.5rem;
+            color: var(--color-primario);
+            margin-bottom: 20px;
+        }
+
+        .equipo {
+            padding: 80px 0;
+        }
+
+        .miembro-equipo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .miembro-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid var(--color-fondo);
+        }
+
+        .valores {
+            background-color: var(--color-fondo);
+            padding: 80px 0;
+        }
+
+        .valor-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .valor-icono {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primario);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .cta-nosotros {
+            background-color: var(--color-primario);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: var(--color-acento);
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 12px 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #e67e00;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-nosotros {
+                height: 40vh;
+            }
+            
+            .seccion-nosotros {
+                padding: 50px 0;
+            }
+            
+            .valor-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .valor-icono {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
