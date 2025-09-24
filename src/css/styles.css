@@ -32,6 +32,10 @@
             font-size: 1.8rem;
             color: var(--color-primario) !important;
         }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
 
         .nav-list .nav-link {
             color: var(--color-primario) !important;

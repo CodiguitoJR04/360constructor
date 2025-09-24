@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Constructora 360 - Conoce nuestros proyectos residenciales, comerciales, industriales y de infraestructura. Galerías completas de cada categoría.">
-    <meta name="keywords" content="proyectos de construcción, construcciones residenciales, proyectos comerciales, construcción industrial, infraestructura, galerías de proyectos">
+    <meta name="description" content="Constructora 360 - Conoce nuestros proyectos de soldadura, vidrio, plomería y albañilería. Galerías completas de cada categoría.">
+    <meta name="keywords" content="proyectos de construcción, soldadura, vidrio, plomería, albañilería, galerías de proyectos">
     <meta name="author" content="Constructora 360">
     <title>Constructora 360 - Nuestros Proyectos</title>
     
@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav-custom">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <span>Constructora 360</span>
+                    <img src="src/assets/logo/LOGO FONDO TRANSPARENTE AZUL- inicio.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,178 +54,154 @@
         </nav>
     </header>
 
-    <!-- Hero Section para Proyectos -->
-    <section class="hero-proyectos">
+    <!-- Hero Section para Nosotros -->
+    <section class="hero-nosotros">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Proyectos</li>
+                    <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
                 </ol>
             </nav>
-            <h1 class="hero-title">Nuestros Proyectos</h1>
-            <p class="lead">Descubre nuestra cartera de proyectos residenciales, comerciales, industriales y de infraestructura</p>
+            <h1 class="hero-title">Proyectos Destacados</h1>
+            <p class="lead">Los hechos hablan por sí mismos</p>
         </div>
     </section>
 
     <!-- Sección Proyectos -->
-    <section class="seccion-proyectos">
+    <section class="seccion-proyectos py-5">
         <div class="container">
-            <div class="proyectos-header">
-                <h2>Proyectos Destacados</h2>
+            <div class="proyectos-header text-center mb-5 mt-5">
+                <h2>Dejando Huella</h2>
                 <p>Conoce algunos de nuestros trabajos más representativos en cada categoría</p>
             </div>
 
-            <!-- Proyectos Residenciales -->
+            <!-- Proyectos en una sola fila -->
             <div class="categoria-proyectos">
-                <div class="categoria-titulo">
-                    <h3>Proyectos Residenciales</h3>
-                </div>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
+                    <!-- Proyecto de Soldadura -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Residencial Las Lomas" class="proyecto-img">
+                            <img src="src/assets/img/img-soldaduras/WhatsApp Image 2025-09-18 at 2.43.25 PM (1).jpeg" alt="Estructuras Metálicas" class="proyecto-img">
                             <div class="proyecto-overlay">
-                                <h4>Residencial Las Lomas</h4>
-                                <p>Conjunto habitacional de 120 viviendas sustentables</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaResidencial1">Ver Galería</a>
+                                <h4>Soldadura</h4>
+                                <p>Fabricación e instalación de estructuras de acero para comercios y naves industriales</p>
+                                <button class="btn-custom btn" data-bs-toggle="modal" data-bs-target="#galeriaSoldadura">
+                                    Ver Galería <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    
+                    <!-- Proyecto de Vidrio -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Condominio Vista Hermosa" class="proyecto-img">
+                            <img src="src/assets/img/img-vidrio/WhatsApp Image 2025-09-22 at 12.56.40 PM (1).jpeg" alt="Fachadas de Vidrio" class="proyecto-img">
                             <div class="proyecto-overlay">
-                                <h4>Condominio Vista Hermosa</h4>
-                                <p>48 departamentos con amenities de lujo</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaResidencial2">Ver Galería</a>
+                                <h4>Vidrio</h4>
+                                <p>Instalación de fachadas de vidrio templado para edificio corporativo</p>
+                                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#galeriaVidrio">
+                                    Ver Galería <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    
+                    <!-- Proyecto de Plomería -->
+                    <div class="col-md-6 col-lg-3">
                         <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Residencial Santa Fe" class="proyecto-img">
+                            <img src="src/assets/img/img-albañileria-plomeria/plomeria.jpg" alt="Sistema de Plomería" class="proyecto-img">
                             <div class="proyecto-overlay">
-                                <h4>Residencial Santa Fe</h4>
-                                <p>80 casas con diseño moderno y áreas verdes</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaResidencial3">Ver Galería</a>
+                                <h4>Plomería</h4>
+                                <p>Instalación completa de sistema de plomería para condominio residencial</p>
+                                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#galeriaPlomeria">
+                                    Ver Galería <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto de Albañilería -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="proyecto-card">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Trabajos de Albañilería" class="proyecto-img">
+                            <div class="proyecto-overlay">
+                                <h4>Albañilería</h4>
+                                <p>Construcción, remodelación y reparación en mampostería y acabados</p>
+                                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#galeriaAlbanileria">
+                                    Ver Galería <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Proyectos Comerciales -->
-            <div class="categoria-proyectos">
-                <div class="categoria-titulo">
-                    <h3>Proyectos Comerciales</h3>
+            
+            <!-- Sección de estadísticas -->
+            <div class="row mt-5 py-5 bg-light rounded">
+                <div class="col-md-3 text-center">
+                    <h3 class="text-primary">150+</h3>
+                    <p>Proyectos Completados</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Centro Comercial Galerías" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Centro Comercial Galerías</h4>
-                                <p>35,000 m² de área rentable con diseño vanguardista</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaComercial1">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Torre Empresarial Norte" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Torre Empresarial Norte</h4>
-                                <p>Edificio de oficinas clase A con 25 pisos</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaComercial2">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Plaza Comercial San Ángel" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Plaza Comercial San Ángel</h4>
-                                <p>Centro comercial con 120 locales y 8 salas de cine</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaComercial3">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-3 text-center">
+                    <h3 class="text-primary">50+</h3>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h3 class="text-primary">10+</h3>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h3 class="text-primary">100%</h3>
+                    <p>Proyectos en Tiempo</p>
                 </div>
             </div>
-
-            <!-- Proyectos Industriales -->
-            <div class="categoria-proyectos">
-                <div class="categoria-titulo">
-                    <h3>Proyectos Industriales</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Parque Industrial Norte" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Parque Industrial Norte</h4>
-                                <p>15 naves industriales con certificación LEED</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaIndustrial1">Ver Galería</a>
+            
+            <!-- Sección de testimonios -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="proyectos-header">
+                        <h2>Testimonios de Clientes</h2>
+                        <p>Lo que nuestros clientes dicen sobre nuestro trabajo</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="testimonio-card p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-quote-left text-primary me-3"></i>
+                                    <p class="mb-0 fst-italic">"Excelente trabajo en la instalación de las estructuras metálicas para nuestra nave industrial. Cumplieron con todos los plazos y el resultado fue impecable."</p>
+                                </div>
+                                <div class="testimonio-autor">
+                                    <strong>Carlos Rodríguez</strong>
+                                    <p class="mb-0 text-muted">Empresa Industrial Mexicana</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Planta de Producción Alpha" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Planta de Producción Alpha</h4>
-                                <p>Instalación industrial de 12,000 m² para manufactura</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaIndustrial2">Ver Galería</a>
+                        
+                        <div class="col-md-4">
+                            <div class="testimonio-card p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-quote-left text-primary me-3"></i>
+                                    <p class="mb-0 fst-italic">"Quedamos muy satisfechos con el trabajo de plomería realizado en nuestro edificio. Profesionales, puntuales y con excelente calidad."</p>
+                                </div>
+                                <div class="testimonio-autor">
+                                    <strong>María González</strong>
+                                    <p class="mb-0 text-muted">Residencial Las Lomas</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1581094794322-7c6f5e7d7c9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Centro Logístico Beta" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Centro Logístico Beta</h4>
-                                <p>Almacén de distribución con tecnología automatizada</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaIndustrial3">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyectos de Infraestructura -->
-            <div class="categoria-proyectos">
-                <div class="categoria-titulo">
-                    <h3>Proyectos de Infraestructura</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Puente Atirantado Sur" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Puente Atirantado Sur</h4>
-                                <p>Puente de 450 metros de longitud con diseño moderno</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaInfraestructura1">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Carretera Federal 150D" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Carretera Federal 150D</h4>
-                                <p>35 km de autopista de cuota con 3 puentes vehiculares</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaInfraestructura2">Ver Galería</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="proyecto-card">
-                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Planta de Tratamiento de Aguas" class="proyecto-img">
-                            <div class="proyecto-overlay">
-                                <h4>Planta de Tratamiento de Aguas</h4>
-                                <p>Infraestructura para tratamiento de 500 l/s de agua residual</p>
-                                <a href="#" class="btn-ver-galeria" data-bs-toggle="modal" data-bs-target="#galeriaInfraestructura3">Ver Galería</a>
+                        
+                        <div class="col-md-4">
+                            <div class="testimonio-card p-4 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-quote-left text-primary me-3"></i>
+                                    <p class="mb-0 fst-italic">"La instalación de las fachadas de vidrio fue perfecta. El equipo demostró gran expertise y atención al detalle en todo momento."</p>
+                                </div>
+                                <div class="testimonio-autor">
+                                    <strong>Roberto Silva</strong>
+                                    <p class="mb-0 text-muted">Torre Corporativa Norte</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,7 +215,7 @@
         <div class="container">
             <h2>¿Tienes un proyecto en mente?</h2>
             <p class="lead mb-4">Contáctanos para hacerlo realidad con los estándares de calidad de Constructora 360</p>
-            <a href="index.html#contacto" class="btn btn-custom">Solicitar Cotización</a>
+            <a href="contacto.html" class="btn btn-custom">Solicitar Cotización</a>
         </div>
     </section>
 
@@ -254,9 +230,9 @@
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <h4>Enlaces Rápidos</h4>
                     <div class="footer-links d-flex flex-column">
-                        <a href="nosotros.html">Nosotros</a>
+                        <a href="index.html#nosotros">Nosotros</a>
                         <a href="servicios.html">Servicios</a>
-                        <a href="proyectos.html">Proyectos</a>
+                        <a href="index.html#proyectos">Proyectos</a>
                         <a href="index.html#contacto">Contacto</a>
                     </div>
                 </div>
@@ -287,85 +263,222 @@
         </div>
     </footer>
 
-    <!-- Modales para las galerías -->
-    <!-- Modal Residencial 1 -->
-    <div class="modal fade galeria-modal" id="galeriaResidencial1" tabindex="-1" aria-hidden="true">
+    <!-- Modales para las galerías (carrusel) -->
+    
+    <!-- Modal Soldadura -->
+    <div class="modal fade modal-galeria" id="galeriaSoldadura" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Residencial Las Lomas</h5>
+                    <h5 class="modal-title">Galería - Proyectos de Soldadura</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselResidencial1" class="carousel slide galeria-carousel" data-bs-ride="carousel">
+                    <div id="carouselSoldadura" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselSoldadura" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselSoldadura" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselSoldadura" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselSoldadura" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselSoldadura" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Residencial Las Lomas - Vista exterior">
+                                <img src="https://images.unsplash.com/photo-1581094794322-7eef43c44d09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Soldadura Proyecto 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Residencial Las Lomas - Área social">
+                                <img src="https://images.unsplash.com/photo-1581094794368-6faa75d6d5a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Soldadura Proyecto 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Residencial Las Lomas - Diseño interior">
+                                <img src="https://images.unsplash.com/photo-1581094794793-0d0d6f5d5d5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Soldadura Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1581094794794-0d0d6f5d5d5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Soldadura Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1581094794795-0d0d6f5d5d5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Soldadura Proyecto 5">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselResidencial1" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSoldadura" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselResidencial1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSoldadura" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                     <div class="proyecto-info">
-                        <h4>Residencial Las Lomas</h4>
-                        <p>Conjunto habitacional de 120 viviendas sustentables con áreas verdes, parques infantiles y vigilancia 24/7. Este proyecto incluye diseño bioclimático y sistemas de captación de agua pluvial.</p>
-                        <p><strong>Ubicación:</strong> Ciudad de México</p>
-                        <p><strong>Año:</strong> 2022</p>
-                        <p><strong>Superficie:</strong> 25,000 m²</p>
+                        <h4>Proyectos de Soldadura</h4>
+                        <p>Nuestro equipo especializado en soldadura ha trabajado en una amplia variedad de proyectos, desde estructuras metálicas para naves industriales hasta barandales y elementos decorativos. Utilizamos las técnicas más avanzadas y materiales de la más alta calidad.</p>
+                        <p><strong>Tipo de proyectos:</strong> Estructuras metálicas, barandales, puertas, proyectos personalizados</p>
+                        <p><strong>Materiales:</strong> Acero, aluminio, acero inoxidable</p>
+                        <p><strong>Técnicas:</strong> Soldadura MIG, TIG, arco eléctrico</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal Comercial 1 -->
-    <div class="modal fade galeria-modal" id="galeriaComercial1" tabindex="-1" aria-hidden="true">
+    
+    <!-- Modal Vidrio -->
+    <div class="modal fade modal-galeria" id="galeriaVidrio" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Centro Comercial Galerías</h5>
+                    <h5 class="modal-title">Galería - Proyectos de Vidrio</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselComercial1" class="carousel slide galeria-carousel" data-bs-ride="carousel">
+                    <div id="carouselVidrio" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselVidrio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselVidrio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselVidrio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselVidrio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselVidrio" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Centro Comercial Galerías - Fachada">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vidrio Proyecto 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Centro Comercial Galerías - Interior">
+                                <img src="https://images.unsplash.com/photo-1586023492225-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vidrio Proyecto 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Centro Comercial Galerías - Área de comida">
+                                <img src="https://images.unsplash.com/photo-1586023492325-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vidrio Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1586023492425-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vidrio Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1586023492525-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vidrio Proyecto 5">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselComercial1" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVidrio" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselComercial1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselVidrio" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                     <div class="proyecto-info">
-                        <h4>Centro Comercial Galerías</h4>
-                        <p>Moderno centro comercial con 35,000 m² de área rentable, distribuidos en 3 niveles con estacionamiento subterráneo para 1,200 vehículos. Cuenta con 150 locales comerciales, 8 salas de cine y patio de comidas.</p>
-                        <p><strong>Ubicación:</strong> Guadalajara, Jalisco</p>
-                        <p><strong>Año:</strong> 2021</p>
-                        <p><strong>Inversión:</strong> $350 millones de MXN</p>
+                        <h4>Proyectos de Vidrio</h4>
+                        <p>Especialistas en la instalación y fabricación de elementos de vidrio para todo tipo de proyectos. Desde fachadas modernas hasta divisiones interiores, ofrecemos soluciones innovadoras con los más altos estándares de seguridad y calidad.</p>
+                        <p><strong>Tipo de proyectos:</strong> Fachadas de vidrio, ventanas, mamparas, divisiones</p>
+                        <p><strong>Materiales:</strong> Vidrio templado, laminado, insulado, decorativo</p>
+                        <p><strong>Aplicaciones:</strong> Residencial, comercial, industrial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Plomería -->
+    <div class="modal fade modal-galeria" id="galeriaPlomeria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Galería - Proyectos de Plomería</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselPlomeria" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPlomeria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPlomeria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPlomeria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPlomeria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPlomeria" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Plomería Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1558618047-4c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Plomería Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1558618047-5c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Plomería Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1558618047-6c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Plomería Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1558618047-7c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Plomería Proyecto 5">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlomeria" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlomeria" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Proyectos de Plomería</h4>
+                        <p>Nuestros servicios de plomería abarcan desde instalaciones residenciales hasta sistemas complejos para edificios comerciales e industriales. Garantizamos soluciones eficientes, duraderas y que cumplen con todas las normativas de seguridad.</p>
+                        <p><strong>Tipo de proyectos:</strong> Sistemas de agua potable, drenaje, instalaciones sanitarias</p>
+                        <p><strong>Áreas de aplicación:</strong> Residencias, edificios, comercios, industrias</p>
+                        <p><strong>Servicios:</strong> Instalación, mantenimiento, reparación, diseño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Albañilería -->
+    <div class="modal fade modal-galeria" id="galeriaAlbanileria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Galería - Proyectos de Albañilería</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselAlbanileria" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselAlbanileria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselAlbanileria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselAlbanileria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselAlbanileria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselAlbanileria" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Albañilería Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1541888946426-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Albañilería Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1541888946427-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Albañilería Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1541888946428-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Albañilería Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1541888946429-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Albañilería Proyecto 5">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlbanileria" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAlbanileria" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Proyectos de Albañilería</h4>
+                        <p>Nuestro equipo de albañilería cuenta con amplia experiencia en construcción, remodelación y reparación. Desde levantamiento de muros hasta acabados finos, garantizamos trabajos de alta calidad que cumplen con los más altos estándares.</p>
+                        <p><strong>Tipo de proyectos:</strong> Construcción, remodelación, reparación, acabados</p>
+                        <p><strong>Materiales:</strong> Ladrillo, block, cemento, yeso, acabados</p>
+                        <p><strong>Especialidades:</strong> Mampostería, aplanados, repellados, texturizados</p>
                     </div>
                 </div>
             </div>
@@ -377,7 +490,17 @@
     
     <!-- Script personalizado -->
     <script>
+        // Inicializar carruseles al abrir los modales
         document.addEventListener('DOMContentLoaded', function() {
+            var modales = document.querySelectorAll('.modal-galeria');
+            
+            modales.forEach(function(modal) {
+                modal.addEventListener('shown.bs.modal', function () {
+                    var carousel = this.querySelector('.carousel');
+                    var bsCarousel = new bootstrap.Carousel(carousel);
+                });
+            });
+            
             // Smooth scrolling para enlaces internos
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -394,16 +517,7 @@
                     }
                 });
             });
-
-            // Inicializar todos los carouseles al abrir los modales
-            document.querySelectorAll('.galeria-modal').forEach(modal => {
-                modal.addEventListener('shown.bs.modal', function () {
-                    const carousel = this.querySelector('.carousel');
-                    const bsCarousel = new bootstrap.Carousel(carousel);
-                    bsCarousel.cycle();
-                });
-            });
-        }); 
+        });
     </script>
 </body>
 </html>
