@@ -84,6 +84,10 @@ h1, h2, h3, h4, h5, h6 {
             flex-shrink: 0;
         }
 
+        .col-lg-6 img{
+            height: 60vh;
+        }
+
         .proceso-paso {
             text-align: center;
             padding: 20px;
