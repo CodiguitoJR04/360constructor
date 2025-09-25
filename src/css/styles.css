@@ -451,6 +451,23 @@
                 margin: 0 10px;
                 font-size: 0.9rem;
             }
+            .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        .whatsapp-btn {
+            width: 55px;
+            height: 55px;
+        }
+        
+        .whatsapp-btn i {
+            font-size: 28px;
+        }
+        
+        .whatsapp-tooltip {
+            display: none;
+        }
         }
 
         @media (max-width: 576px) {
@@ -471,4 +488,21 @@
             .btn-custom {
                 padding: 10px 20px;
             }
+            .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        .whatsapp-btn {
+            width: 55px;
+            height: 55px;
+        }
+        
+        .whatsapp-btn i {
+            font-size: 28px;
+        }
+        
+        .whatsapp-tooltip {
+            display: none;
+        }
         }
