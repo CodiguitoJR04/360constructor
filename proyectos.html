@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Constructora 360 - Conoce nuestros proyectos de soldadura, vidrio, plomería y albañilería. Galerías completas de cada categoría.">
-    <meta name="keywords" content="proyectos de construcción, soldadura, vidrio, plomería, albañilería, galerías de proyectos">
+    <meta name="description" content="Constructora 360 - Conoce nuestros proyectos de soldadura, vidrio, plomería, albañilería y electricidad. Galerías completas de cada categoría.">
+    <meta name="keywords" content="proyectos de construcción, soldadura, vidrio, plomería, albañilería, electricidad, galerías de proyectos">
     <meta name="author" content="Constructora 360">
     <title>Constructora 360 - Nuestros Proyectos</title>
     
@@ -60,7 +60,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                    <li class="breadcrumb-item active" aria-current="page">Proyectos</li>
                 </ol>
             </nav>
             <h1 class="hero-title">Proyectos Destacados</h1>
@@ -76,9 +76,10 @@
                 <p>Conoce algunos de nuestros trabajos más representativos en cada categoría</p>
             </div>
 
-            <!-- Proyectos en una sola fila -->
+            <!-- Proyectos en dos filas -->
             <div class="categoria-proyectos">
-                <div class="row">
+                <!-- Primera fila -->
+                <div class="row mb-4">
                     <!-- Proyecto de Soldadura -->
                     <div class="col-md-6 col-lg-3">
                         <div class="proyecto-card">
@@ -129,6 +130,23 @@
                                 <h4>Albañilería</h4>
                                 <p>Construcción, remodelación y reparación en mampostería y acabados</p>
                                 <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#galeriaAlbanileria">
+                                    Ver Galería <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Segunda fila (centrada) -->
+                <div class="row justify-content-center">
+                    <!-- Proyecto de Electricidad (NUEVO) -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="proyecto-card">
+                            <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.08 PM (4).jpeg" alt="Instalaciones Eléctricas" class="proyecto-img">
+                            <div class="proyecto-overlay">
+                                <h4>Electricidad</h4>
+                                <p>Instalación de sistemas eléctricos para edificios residenciales y comerciales</p>
+                                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#galeriaElectricidad">
                                     Ver Galería <i class="fas fa-arrow-right ms-2"></i>
                                 </button>
                             </div>
@@ -499,10 +517,67 @@
             </div>
         </div>
     </div>
+    
+    <!-- Modal Electricidad (NUEVO) -->
+    <div class="modal fade modal-galeria" id="galeriaElectricidad" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Galería - Proyectos de Electricidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselElectricidad" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselElectricidad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselElectricidad" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselElectricidad" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselElectricidad" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselElectricidad" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.08 PM (4).jpeg" class="d-block w-100" alt="Electricidad Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.08 PM (2).jpeg" class="d-block w-100" alt="Electricidad Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.08 PM (1).jpeg" class="d-block w-100" alt="Electricidad Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.07 PM (1).jpeg" class="d-block w-100" alt="Electricidad Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/assets/img/img-electrico/WhatsApp Image 2025-09-18 at 2.43.07 PM.jpeg" class="d-block w-100" alt="Electricidad Proyecto 5">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectricidad" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselElectricidad" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Proyectos de Electricidad</h4>
+                        <p>Nuestro equipo de electricistas certificados ha realizado instalaciones eléctricas completas para proyectos residenciales, comerciales e industriales. Garantizamos sistemas seguros, eficientes y que cumplen con todas las normativas de seguridad eléctrica.</p>
+                        <p><strong>Tipo de proyectos:</strong> Instalaciones eléctricas, iluminación, cuadros de distribución</p>
+                        <p><strong>Áreas de aplicación:</strong> Residencial, comercial, industrial</p>
+                        <p><strong>Servicios:</strong> Instalación, mantenimiento, reparación, diseño de sistemas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Botón de WhatsApp -->
     <a href="https://wa.me/525551234567?text=Hola%20Constructora%20360,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp whatsapp-btn"></i>
     </a>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
