@@ -1,179 +1,347 @@
 @import url(styles.css);
+
+/* Variables para consistencia */
+:root {
+  --hero-height-desktop: 59vh;
+  --hero-height-tablet: 50vh;
+  --hero-height-mobile: 45vh;
+  --section-padding-desktop: 80px 0;
+  --section-padding-tablet: 60px 0;
+  --section-padding-mobile: 40px 0;
+  --image-size-desktop: 30vh;
+  --image-size-tablet: 25vh;
+  --image-size-mobile: 20vh;
+  --miembro-img-size-desktop: 200px;
+  --miembro-img-size-tablet: 180px;
+  --miembro-img-size-mobile: 150px;
+}
+
 .hero-nosotros {
-            height:59vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            color: white;
-            margin-top: -76px; /* Para compensar la navbar fija */
-            padding-top: 76px;
-        }
+  height: var(--hero-height-desktop);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: -76px; /* Para compensar la navbar fija */
+  padding-top: 76px;
+}
 
-        .breadcrumb {
-            background-color: transparent;
-            padding: 0;
-            margin-bottom: 20px;
-        }
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
 
-        .breadcrumb-item a {
-            color: var(--color-acento);
-            text-decoration: none;
-        }
+.breadcrumb-item a {
+  color: var(--color-acento);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-        .breadcrumb-item.active {
-            color: white;
-        }
+.breadcrumb-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
-        .seccion-nosotros {
-            padding: 80px 0;
-        }
+.breadcrumb-item.active {
+  color: #ddd;
+}
 
-        .nosotros-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+.seccion-nosotros {
+  padding: var(--section-padding-desktop);
+}
 
-        .nosotros-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--color-primario);
-        }
+.nosotros-header {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
 
-        .nosotros-imagen {
-            width: 30vh;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            height: 30vh;
-        }
+.nosotros-header h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 0.9375rem;
+  color: var(--color-primario);
+}
 
-        .nosotros-info {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            text-align: center;
-        }
+.nosotros-imagen {
+  width: var(--image-size-desktop);
+  height: var(--image-size-desktop);
+  border-radius: 10px;
+  margin: 0 auto 1.875rem;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
 
-        .icon-box {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: var(--color-primario);
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-        }
+.nosotros-info {
+  background: white;
+  border-radius: 10px;
+  padding: 1.875rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
 
-        .mision-vision {
-            background-color: var(--color-fondo);
-            padding: 80px 0;
-        }
+.icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+}
 
-        .card-mv {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            height: 100%;
-            text-align: center;
-        }
+.mision-vision {
+  background-color: var(--color-fondo);
+  padding: var(--section-padding-desktop);
+}
 
-        .card-mv i {
-            font-size: 2.5rem;
-            color: var(--color-primario);
-            margin-bottom: 20px;
-        }
+.card-mv {
+  background: white;
+  border-radius: 10px;
+  padding: 1.875rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .equipo {
-            padding: 80px 0;
-        }
+.card-mv:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 
-        .miembro-equipo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.card-mv i {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--color-primario);
+  margin-bottom: 1.25rem;
+}
 
-        .miembro-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px;
-            border: 5px solid var(--color-fondo);
-        }
+.equipo {
+  padding: var(--section-padding-desktop);
+}
 
-        .valores {
-            background-color: var(--color-fondo);
-            padding: 80px 0;
-        }
+.miembro-equipo {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
 
-        .valor-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
+.miembro-img {
+  width: var(--miembro-img-size-desktop);
+  height: var(--miembro-img-size-desktop);
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.25rem;
+  border: 5px solid var(--color-fondo);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
 
-        .valor-icono {
-            width: 60px;
-            height: 60px;
-            background-color: var(--color-primario);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            margin-right: 20px;
-            flex-shrink: 0;
-        }
+.miembro-img:hover {
+  transform: scale(1.05);
+  border-color: var(--color-primario);
+}
 
-        .cta-nosotros {
-            background-color: var(--color-primario);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
+.valores {
+  background-color: var(--color-fondo);
+  padding: var(--section-padding-desktop);
+}
 
-        .btn-custom {
-            background-color: var(--color-acento);
-            color: white;
-            font-weight: bold;
-            border-radius: 30px;
-            padding: 12px 30px;
-            border: none;
-            transition: all 0.3s ease;
-        }
+.valor-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.875rem;
+  transition: transform 0.3s ease;
+}
 
-        .btn-custom:hover {
-            background-color: #e67e00;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+.valor-item:hover {
+  transform: translateX(5px);
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-nosotros {
-                height: 40vh;
-            }
-            
-            .seccion-nosotros {
-                padding: 50px 0;
-            }
-            
-            .valor-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .valor-icono {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-        }
+.valor-icono {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primario);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.valor-item:hover .valor-icono {
+  background-color: var(--color-acento);
+  transform: scale(1.1);
+}
+
+.cta-nosotros {
+  background-color: var(--color-primario);
+  color: white;
+  padding: var(--section-padding-desktop);
+  text-align: center;
+}
+
+.btn-custom {
+  background-color: var(--color-acento);
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0.75rem 1.875rem;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-nosotros {
+    height: var(--hero-height-tablet);
+  }
+  
+  .seccion-nosotros,
+  .mision-vision,
+  .equipo,
+  .valores,
+  .cta-nosotros {
+    padding: var(--section-padding-tablet);
+  }
+  
+  .nosotros-imagen {
+    width: var(--image-size-tablet);
+    height: var(--image-size-tablet);
+  }
+  
+  .miembro-img {
+    width: var(--miembro-img-size-tablet);
+    height: var(--miembro-img-size-tablet);
+  }
+  
+  .nosotros-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .hero-nosotros {
+    height: var(--hero-height-mobile);
+    margin-top: -66px;
+    padding-top: 66px;
+  }
+  
+  .seccion-nosotros,
+  .mision-vision,
+  .equipo,
+  .valores,
+  .cta-nosotros {
+    padding: var(--section-padding-mobile);
+  }
+  
+  .nosotros-header {
+    margin-bottom: 1.875rem;
+  }
+  
+  .nosotros-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .nosotros-info {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .nosotros-imagen {
+    width: var(--image-size-mobile);
+    height: var(--image-size-mobile);
+    margin-bottom: 1.25rem;
+  }
+  
+  .valor-item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.875rem;
+  }
+  
+  .valor-icono {
+    margin-right: 0;
+    margin-bottom: 0.9375rem;
+  }
+  
+  .miembro-img {
+    width: var(--miembro-img-size-mobile);
+    height: var(--miembro-img-size-mobile);
+    margin-bottom: 0.9375rem;
+  }
+  
+  .card-mv {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .btn-custom {
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Pequeños móviles */
+@media (max-width: 480px) {
+  .hero-nosotros {
+    height: 40vh;
+  }
+  
+  .seccion-nosotros,
+  .mision-vision,
+  .equipo,
+  .valores,
+  .cta-nosotros {
+    padding: 1.25rem 0;
+  }
+  
+  .nosotros-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .nosotros-imagen {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .valor-icono {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .miembro-img {
+    width: 120px;
+    height: 120px;
+  }
+}
