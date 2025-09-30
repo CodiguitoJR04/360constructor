@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand img {
-    height: 70px;
+    height: 80px;
     margin-right: 8px;
 }
 
@@ -562,7 +562,7 @@ img {
     }
     
     .navbar-brand img {
-        height: 80px;
+        height: 79.8px;
     }
     
     .section-nosotros,
