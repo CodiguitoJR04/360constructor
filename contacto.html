@@ -314,33 +314,98 @@
     
     <!-- Script personalizado -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling para enlaces internos
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
+        // Script para enviar información del formulario a WhatsApp
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling para enlaces internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             
-            // Validación básica del formulario
-            document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Aquí iría la lógica para enviar el formulario
-                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-                this.reset();
-            });
-        }); 
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Función para enviar formulario a WhatsApp
+    function enviarAWhatsApp(e) {
+        e.preventDefault();
+        
+        // Obtener los valores del formulario
+        const nombre = document.querySelector('input[placeholder="Nombre completo"]').value;
+        const email = document.querySelector('input[placeholder="Correo electrónico"]').value;
+        const telefono = document.querySelector('input[placeholder="Teléfono"]').value;
+        const asunto = document.querySelector('input[placeholder="Asunto"]').value;
+        const tipoProyecto = document.querySelector('select').value;
+        const descripcion = document.querySelector('textarea').value;
+        
+        // Validar campos requeridos
+        if (!nombre || !email || !descripcion) {
+            alert('Por favor, completa los campos obligatorios: Nombre, Email y Descripción del proyecto.');
+            return;
+        }
+        
+        // Construir el mensaje para WhatsApp
+        const mensaje = `*Nuevo mensaje de contacto - Constructora 360*
+
+*Información del contacto:*
+• *Nombre:* ${nombre}
+• *Email:* ${email}
+• *Teléfono:* ${telefono || 'No proporcionado'}
+• *Asunto:* ${asunto || 'Sin asunto específico'}
+
+*Detalles del proyecto:*
+• *Tipo de proyecto:* ${tipoProyecto || 'No especificado'}
+• *Descripción:*
+${descripcion}
+
+*Este mensaje fue enviado desde el formulario de contacto del sitio web.*`;
+        
+        // Codificar el mensaje para URL
+        const mensajeCodificado = encodeURIComponent(mensaje);
+        
+        // Número de WhatsApp (reemplaza con el número real)
+        const numeroWhatsApp = '525613255361'; // Formato internacional sin símbolos
+        
+        // Crear el enlace de WhatsApp
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+        
+        // Abrir WhatsApp en una nueva pestaña
+        window.open(urlWhatsApp, '_blank');
+        
+        // Opcional: limpiar el formulario después del envío
+        document.getElementById('formulario-contacto').reset();
+    }
+    
+    // Agregar el botón de WhatsApp al formulario
+    const formulario = document.getElementById('formulario-contacto');
+    const botonEnviar = formulario.querySelector('button[type="submit"]');
+    
+    // Crear botón de WhatsApp
+    const botonWhatsApp = document.createElement('button');
+    botonWhatsApp.type = 'button';
+    botonWhatsApp.className = 'whatsapp-btn';
+    botonWhatsApp.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar por WhatsApp';
+    
+    // Insertar el botón después del botón de enviar
+    botonEnviar.parentNode.insertBefore(botonWhatsApp, botonEnviar.nextSibling);
+    
+    // Agregar evento al botón de WhatsApp
+    botonWhatsApp.addEventListener('click', enviarAWhatsApp);
+    
+    // Mantener la funcionalidad original del formulario (opcional)
+    formulario.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+        this.reset();
+    });
+});
     </script>
 </body>
 </html>
