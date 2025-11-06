@@ -98,7 +98,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h5>Dirección</h5>
-                                <p>EDOMEX</p>
+                                <p>Primera Cda. de Nezahualcóyotl 112-Int 2, Centro, 56100 Texcoco de Mora, Méx.</p>
                             </div>
                         </div>
                         <div class="contacto-item">
@@ -163,7 +163,7 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8887802873886!2d-99.1699499242191!3d19.427020141127026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3762e2571d%3A0x8b1ff4743fdee216!2sAv.%20Insurgentes%20Sur%20123%2C%20Cr%C3%A9dito%20Constructor%2C%20Benito%20Ju%C3%A1rez%2C%2003900%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1690832234828!5m2!1ses!2sus" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.636027857047!2d-98.88328703704833!3d19.514289041701314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e64b1ff2be57%3A0xe7e9b432ca5dd3f3!2sOFICINAS%20DEL%20H.%20AYUNTAMIENTO%20DE%20TEXCOCO!5e0!3m2!1ses-419!2smx!4v1762468480352!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -383,24 +383,7 @@ ${descripcion}
         document.getElementById('formulario-contacto').reset();
     }
     
-    // Agregar el botón de WhatsApp al formulario
-    const formulario = document.getElementById('formulario-contacto');
-    const botonEnviar = formulario.querySelector('button[type="submit"]');
-    
-    // Crear botón de WhatsApp
-    const botonWhatsApp = document.createElement('button');
-    botonWhatsApp.type = 'button';
-    botonWhatsApp.className = 'whatsapp-btn';
-    botonWhatsApp.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar por WhatsApp';
-    
-    // Insertar el botón después del botón de enviar
-    botonEnviar.parentNode.insertBefore(botonWhatsApp, botonEnviar.nextSibling);
-    
-    // Agregar evento al botón de WhatsApp
-    botonWhatsApp.addEventListener('click', enviarAWhatsApp);
-    
-    // Mantener la funcionalidad original del formulario (opcional)
-    formulario.addEventListener('submit', function(e) {
+       formulario.addEventListener('submit', function(e) {
         e.preventDefault();
         alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
         this.reset();
