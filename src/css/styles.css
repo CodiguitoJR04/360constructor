@@ -318,6 +318,15 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
 }
 
+.content-cta{
+    background-color: #0056b3 !important;
+}
+
+.content-cta h2, .content-cta p{
+    color: white !important;nav-down: ;
+}
+
+
 .contact-header {
     text-align: center;
     margin-bottom: 40px;
