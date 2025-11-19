@@ -285,7 +285,7 @@ textarea.form-control {
 @media (max-width: 768px) {
   .hero-contacto {
     height: var(--hero-height-mobile);
-    margin-top: -66px;
+    margin-top: -60px;
     padding-top: 66px;
   }
   
@@ -352,7 +352,7 @@ textarea.form-control {
 /* Pequeños móviles */
 @media (max-width: 480px) {
   .hero-contacto {
-    height: 40vh;
+    height: 60vh;
   }
   
   .seccion-contacto,

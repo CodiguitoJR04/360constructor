@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-cta h2, .content-cta p{
-    color: white !important;nav-down: ;
+    color: white !important;nav-down: 0px;
 }
 
 
@@ -534,8 +534,8 @@ img {
     }
     
     .navbar-toggler-icon {
-        width: 1em;
-        height: 1em;
+        width: 2em;
+        height: 2em;
     }
     
     .navbar-collapse {
@@ -639,8 +639,8 @@ img {
     }
     
     .navbar-toggler-icon {
-        width: 0.9em;
-        height: 0.9em;
+        width: 1.6em;
+        height: 1.6em;
     }
 }
 
@@ -666,6 +666,6 @@ img {
     }
     
     .navbar-brand img {
-        height: 20px;
+        height: 70px;
     }
 }

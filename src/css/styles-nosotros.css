@@ -285,7 +285,7 @@
 @media (max-width: 768px) {
   .hero-nosotros {
     height: var(--hero-height-mobile);
-    margin-top: -66px;
+    margin-top: -60px;
     padding-top: 66px;
   }
   
@@ -348,7 +348,7 @@
 /* Pequeños móviles */
 @media (max-width: 480px) {
   .hero-nosotros {
-    height: 40vh;
+    height: 60vh;
   }
   
   .seccion-nosotros,

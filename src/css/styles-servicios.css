@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Pequeños móviles */
 @media (max-width: 480px) {
   .hero-servicios {
-    height: 35vh;
+    height: 60vh;
   }
   
   .servicio-detalle {
