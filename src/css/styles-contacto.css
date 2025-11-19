@@ -140,6 +140,11 @@ textarea.form-control {
   resize: vertical;
 }
 
+.social-icons > a{
+  color: var(--color-primario) !important;
+
+}
+
 .submit-btn {
   background: var(--color-acento);
   color: white;
