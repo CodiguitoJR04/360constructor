@@ -165,9 +165,8 @@
 
 .miembro-equipo img {
   width: 100%;
-  height: 55.8%;
+  height: 55%;
   border-radius: 50%;
-  max-width: 160px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
